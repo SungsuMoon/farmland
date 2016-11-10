@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/side-menu.css" rel="stylesheet">
+    <link href="css/side-menu-old-ie.css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <title>서천농가</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu">
+            <div class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">서천농가</a></li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" id="menuLink1" class="pure-menu-link">작물</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">호박</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">고구마</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">오이</a></li>
+                        </ul>
+                    </li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" id="menuLink1" class="pure-menu-link">더 보기</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">우리는</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">주문정보</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="header">
+                <h1>서천농가</h1>
+                <hr>
+                <h2 class="header-detail">서천농부가 직접 기른 작물 직거래 판매합니다.</h2>
+            </div>
+
+
+
+            <div class="content">
+                <h2 class="special">오늘의 핫딜!</h2>
+                <div class="special-card card">
+                    <div class="pure-g">
+                        <div class="pure-u-1-3 pure-u-md-1">
+                            <img id="special-crop-image" class="special-card-image" src="http://placehold.it/233" alt="이미지">
+                        </div>
+                        <div class="pure-u-2-3 pure-u-md-1">
+                            <div class="special-card-textbox">
+                                <h2 id="special-crop-name" class="special-card-name"></h2>
+                                <hr>
+                                <p id="special-crop-detail" class="special-card-detail"></p>
+                                <p id="special-crop-unit" class="special-card-unit"></p>
+                                <p class="won">당</p>
+                                <h1 id="special-crop-price" class="special-card-price"></h1>
+                                <p class="won">원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="normal">오늘의 상품</h2>
+                <div class="normal-cards">
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="first-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="first-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="first-crop-detail" class="normal-card-detail"></p>
+                                    <p id="first-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="first-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="second-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="second-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="second-crop-detail" class="normal-card-detail"></p>
+                                    <p id="second-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="second-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="third-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="third-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="third-crop-detail" class="normal-card-detail"></p>
+                                    <p id="third-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="third-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="fourth-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="fourth-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="fourth-crop-detail" class="normal-card-detail"></p>
+                                    <p id="fourth-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="fourth-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="fifth-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="fifth-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="fifth-crop-detail" class="normal-card-detail"></p>
+                                    <p id="fifth-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="fifth-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="normal-card card">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3 pure-u-md-1">
+                                <img id="sixth-crop-image" class="normal-card-image" src="http://placehold.it/233" alt="이미지">
+                            </div>
+                            <div class="pure-u-2-3 pure-u-md-1">
+                                <div class="normal-card-textbox">
+                                    <h2 id="sixth-crop-name" class="normal-card-name"></h2>
+                                    <hr>
+                                    <p id="sixth-crop-detail" class="normal-card-detail"></p>
+                                    <p id="sixth-crop-unit" class="normal-card-unit"></p>
+                                    <p class="won">당</p>
+                                    <h1 id="sixth-crop-price" class="normal-card-price"></h1>
+                                    <p class="won">원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <footer>
+                <hr>
+                <p class="address">충청남도 서천군 화양면 망월리 망월길2번길 7-7</p>
+                <p class="phone">주문/상담: 010-5062-1547</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
